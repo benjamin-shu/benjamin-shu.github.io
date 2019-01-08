@@ -1,13 +1,21 @@
 body {
-	background-color: whitesmoke;
-}
-
-.template_main {
+	background-color: blue;
 	display: inline-block;
     text-align: center;
 	align-items: center;
-	height: 80vh;
-	width: 100vw;
+	height: 100%;
+	width: 100%;
+}
+
+.template_main {
+	background-color: whitesmoke;
+	display: inline-block;
+	align-items: center;
+	height: calc(100vh - 50px);
+	width: calc(100vw - 50px);
+}
+
+.template_content {
 }
 
 .centerImage {
@@ -20,6 +28,13 @@ body {
 .centerLeftAlign {
 	display: inline-block;
 	text-align: left;
+}
+
+.title {
+	font-family: Courier, serif;
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 80px;
 }
 
 .header {
