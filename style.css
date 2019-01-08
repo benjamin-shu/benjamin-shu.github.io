@@ -1,10 +1,13 @@
 body {
 	background-color: whitesmoke;
-	line-height: 25px;
 }
 
-.center {
+.template_main {
+	display: inline-block;
     text-align: center;
+	align-items: center;
+	height: 80vh;
+	width: 100vw;
 }
 
 .centerImage {
@@ -17,4 +20,25 @@ body {
 .centerLeftAlign {
 	display: inline-block;
 	text-align: left;
+}
+
+.header {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 28px;
+	font-weight: 800;
+	line-height: 30px;
+}
+
+.bullet {
+	font-family: Calibri, Arial, sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 25px;
+}
+
+.body {
+	font-family: Calibri, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 25px;
 }
