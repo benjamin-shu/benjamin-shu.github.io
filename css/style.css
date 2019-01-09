@@ -27,6 +27,12 @@ body {
 	width: calc(100vw - 400px);
 }
 
+.template_content {
+	display: inline-block;
+	text-align: left;
+	width: calc(100vw - 500px);
+}
+
 .template_doc {
 	width: calc(100vw - 450px);
 	height: calc((11 / 8.5) * (100vw - 400px));
@@ -37,11 +43,6 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	width: 20%;
-}
-
-.center_left {
-	display: inline-block;
-	text-align: left;
 }
 
 .header {
