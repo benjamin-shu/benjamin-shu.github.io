@@ -54,11 +54,14 @@ body {
    width: 100%;
 }
 
-.center_img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 20%;
+.thumbnail {
+	padding: 5px;
+	width: 200px;
+}
+
+.thumbnail:hover {
+	-webkit-filter: brightness(70%);
+	filter: brightness(70%);
 }
 
 .header {
