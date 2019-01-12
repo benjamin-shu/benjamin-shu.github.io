@@ -3,21 +3,23 @@ body {
 	align-items: center;
 	height: 100%;
 	width: 100%;
+	min-width: 920px;
 	
-    text-align: center;
+	text-align: center;
 }
 
 .template_title {
 	background-color: rgba(0, 0, 0, 0.0);
 	display: inline-block;
-	height: 200px;
-	width: calc(100vw - 100px);
+	height: 300px;
+	width: calc(100vw - 400px);
+	min-width: 520px;
 	
 	text-align: center;
 	font-family: Courier, serif;
 	font-size: 60px;
 	font-weight: 900;
-	line-height: 175px;
+	line-height: 100px;
 }
 
 .template_main {
@@ -25,6 +27,7 @@ body {
 	display: inline-block;
 	align-items: center;
 	width: calc(100vw - 400px);
+	min-width: 520px;
 }
 
 .template_content {
@@ -32,11 +35,14 @@ body {
 	align-items: center;
 	text-align: left;
 	width: calc(100vw - 500px);
+	min-width: 420px;
 }
 
 .template_doc {
 	width: calc(100vw - 450px);
+	min-width: 470;
 	height: calc((11 / 8.5) * (100vw - 400px));
+	min-height: 610;
 }
 
 .template_video {
