@@ -1,50 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-	<title>Color Test</title>
-</head>
-<body>
-	<script>
-		var hourCodes = ["#003399", "#0040a5", "#004cb1", "#0059bd", "#0066cc", "#0075d2",
-						"#0084da", "#0093e2", "#00a2ea", "#00b1f2", "#00c0fa", "#00ccff",
-						"#00e1ff", "#00ccff", "#00c0fa", "#00b1f2", "#00a2ea", "#0093e2",
-						"#0084da", "#0075d2", "#0066cc", "#0059bd", "#004cb1", "#0040a5" ];
-		var d = new Date(), h = d.getHours();
+	<head>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+		<title>Color Test</title>
+	</head>
+
+	<script src="scripts/daytime.js"></script>
+	<body onload="start()">		
+		<div id="title" class="template_title">
+			<p>Color Test Page</p>
+		</div>
 		
-		document.body.style.background = hourCodes[h];
-	</script>
-	
-	<div id="title" class="template_title">Color Test Page</div>
-	
-	<div id="main" class="template_main">
-		<div class="bullet"><a class="link" href="index.html">Back to main page</a></div>
-		<div class="body" style="background-color: rgb(0, 225, 255)">Text</div>		<!-- Start here, wrap around -->
-		<div class="body" style="background-color: rgb(0, 204, 255)">Text</div>		<!-- Daytime colors -->
-		<div class="body" style="background-color: rgb(0, 192, 250)">Text</div>
-		<div class="body" style="background-color: rgb(0, 177, 242)">Text</div>
-		<div class="body" style="background-color: rgb(0, 162, 234)">Text</div>
-		<div class="body" style="background-color: rgb(0, 147, 226)">Text</div>
-		<div class="body" style="background-color: rgb(0, 132, 218)">Text</div>
-		<div class="body" style="background-color: rgb(0, 117, 210)">Text</div>		<!-- Daytime colors -->
-		<div class="body" style="background-color: rgb(0, 102, 204)">Text</div>		<!-- Nighttime colors -->
-		<div class="body" style="background-color: rgb(0, 89, 189)">Text</div>
-		<div class="body" style="background-color: rgb(0, 76, 177)">Text</div>
-		<div class="body" style="background-color: rgb(0, 64, 165)">Text</div>
-		<div class="body" style="background-color: rgb(0, 51, 153)">Text</div>		<!-- Nighttime colors -->
-		<div class="body" style="background-color: rgb(0, 64, 165)">Text</div>
-		<div class="body" style="background-color: rgb(0, 76, 177)">Text</div>
-		<div class="body" style="background-color: rgb(0, 89, 189)">Text</div>
-		<div class="body" style="background-color: rgb(0, 102, 204)">Text</div>		<!-- Nighttime colors -->
-		<div class="body" style="background-color: rgb(0, 117, 210)">Text</div>		<!-- Daytime colors -->
-		<div class="body" style="background-color: rgb(0, 132, 218)">Text</div>
-		<div class="body" style="background-color: rgb(0, 147, 226)">Text</div>
-		<div class="body" style="background-color: rgb(0, 162, 234)">Text</div>
-		<div class="body" style="background-color: rgb(0, 177, 242)">Text</div>
-		<div class="body" style="background-color: rgb(0, 192, 250)">Text</div>
-		<div class="body" style="background-color: rgb(0, 204, 255)">Text</div>		<!-- Daytime colors -->
-		<div class="body" style="background-color: rgb(0, 225, 255)">Text</div>		<!-- Wrap around here! -->
-	</div>
-</body>
+		<div id="main" class="template_main">
+			<div class="bullet"><a class="link" href="index.html">Back to main page</a></div>
+			<div class="body" style="background-color: #003399">00:00</div>		<!-- Midnight - wrap around here! -->
+			<div class="body" style="background-color: #0040a5">01:00</div>		<!-- Nighttime colors -->
+			<div class="body" style="background-color: #004cb1">02:00</div>
+			<div class="body" style="background-color: #0059bd">03:00</div>
+			<div class="body" style="background-color: #0066cc">04:00</div>
+			<div class="body" style="background-color: #0075d2">05:00</div>
+			<div class="body" style="background-color: #0084da">06:00</div>
+			<div class="body" style="background-color: #0093e2">07:00</div>		<!-- Daytime colors -->
+			<div class="body" style="background-color: #00a2ea">08:00</div>		<!-- Nighttime colors -->
+			<div class="body" style="background-color: #00b1f2">09:00</div>
+			<div class="body" style="background-color: #00c0fa">10:00</div>
+			<div class="body" style="background-color: #00ccff">11:00</div>
+			<div class="body" style="background-color: #00e1ff">12:00</div>		<!-- Noon -->
+			<div class="body" style="background-color: #00ccff">13:00</div>
+			<div class="body" style="background-color: #00c0fa">14:00</div>
+			<div class="body" style="background-color: #00b1f2">15:00</div>
+			<div class="body" style="background-color: #00a2ea">16:00</div>		<!-- Nighttime colors -->
+			<div class="body" style="background-color: #0093e2">17:00</div>		<!-- Daytime colors -->
+			<div class="body" style="background-color: #0084da">18:00</div>
+			<div class="body" style="background-color: #0075d2">19:00</div>
+			<div class="body" style="background-color: #0066cc">20:00</div>
+			<div class="body" style="background-color: #0059bd">21:00</div>
+			<div class="body" style="background-color: #004cb1">22:00</div>
+			<div class="body" style="background-color: #0040a5">23:00</div>		<!-- Daytime colors -->
+			<div class="body" style="background-color: #003399">00:00</div>		<!-- Wrap around here! -->
+		</div>
+	</body>
 </html>
