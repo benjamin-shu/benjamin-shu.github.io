@@ -29,7 +29,7 @@ function loop() {
 	document.body.style.backgroundRepeat = "no-repeat";
 	document.body.style.backgroundSize = "contain";
 	document.body.style.backgroundColor = hourCodes[h];
-	setInterval(update, 3 * 1000);
+	setInterval(update, 1.5 * 1000);
 }
 
 /* Function called repeatedly to transition to next color. */
@@ -40,5 +40,5 @@ function update() {
 	document.body.style.backgroundRepeat = "no-repeat";
 	document.body.style.backgroundSize = "contain";
 	document.body.style.backgroundColor = hourCodes[count];
-	count++;
+	count = (count + 1) % 24;
 }
