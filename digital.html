@@ -1,92 +1,93 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-	<title>Digital Media Projects</title>
-</head>
-<body>
+	<head>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+		<title>Digital Media Projects</title>
+	</head>
+
 	<script src="scripts/daytime.js"></script>
-	
-	<div id="title" class="template_title">
-		<p>Digital Media<br>Projects</p>
-	</div>
-	
-	<div id="main" class="template_main">
-		<p class="bullet"><a class="link" href="index.html">Back to main page</a></p>
-		<div class="template_content">
-			<p class="header">Crossing for Cheese</p>
-				<div class="template_video">
-					<iframe src="https://drive.google.com/file/d/1GVDae-zk-WU-CFp_1Ifw6vB-o_UzOnbu/preview"></iframe>
-				</div>
-				<p class="body">
-					Made for CSE 334 at Stony Brook University<br>
-					Models and animation made in <a class="link" target="_blank" href="https://www.blender.org/">Blender</a><br>
-					Music used: "Ambler" Kevin MacLeod (incompetech.com)<br>
-					Licensed under Creative Commons: By Attribution 3.0 License<br>
-					<a class="link" target="_blank" href="http://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/</a>
-				</p>
-			<p class="header">What IS God's Love We Deliver?</p>
-				<div class="template_video">
-					<iframe src="https://www.youtube.com/embed/dk2ZKtnkTHw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-				<p class="body">
-					Made for the non-profit <a class="link" target="_blank" href="https://www.glwd.org/">God's Love We Deliver</a><br>
-					Illustrations drawn in GIMP 2 and Adobe Photoshop<br>
-					Narration recorded on iPhone SE<br>
-					Video editing done in Adobe After Effects<br>
-					Music used: "Optimistic and Upbeat" by TopFlow<br>
-					Stock media provided by <a class="link" target="_blank" href="https://www.pond5.com/artist/topflow#1/2064">Pond5</a>
-				</p>
-			<p class="header">"Self-Portrait" Project</p>
-				<div class="template_video">
-					<iframe src="https://drive.google.com/file/d/1kdic8JceYX3vvo8r_oICpZn3LnVyJAvu/preview"></iframe>
-				</div>
-				<p class="body">
-					Made for ARS 324 at Stony Brook University<br>
-					Applications coded in Java, JavaFX using <a class="link" target="_blank" href="https://netbeans.org/">NetBeans IDE</a><br>
-					Drawings done in Microsoft Paint, <a class="link" target="_blank" href="https://www.gimp.org/">GIMP 2</a><br>
-					Live video recorded using iPhone SE<br>
-					Screen recordings done in <a class="link" target="_blank" href="https://obsproject.com/">OBS Studio</a><br>
-					Music used:<br>
-					"Harmony of Heroes - King DedeDnB (Kirby - King Dedede Theme Remix)" by Brutal MMK<br>
-					<a class="link" target="_blank" href="https://www.youtube.com/watch?v=dZ2YztsTGdI">https://www.youtube.com/watch?v=dZ2YztsTGdI</a>
-				</p>
-				<p class="body">
-				This was a fun project to do! At the end of ARS 324 (Graphic Design), we had to make a video
-				that communicated our personalities (a description deliberately left vague). I wanted to convey 
-				my experiences with both programming and making digital media. More importantly, I wanted to show 
-				how I could use both skill sets for the same project.
-				</p>
-				<p class="body">
-				<b>Fun Fact:</b> 
-					The talking sprite featured at the end of the video had two forms - mouth open and mouth closed.
-					These toggled with every keystroke. If I pressed keys an odd number of times, the program would leave 
-					the sprite's mouth hanging open (and his face looking kind of stupid).
-				</p>
-			<p><br></p>
-			<p class="header">Editing a Profile Picture</p>
-				<div class="template_video">
-					<iframe src="https://drive.google.com/file/d/1jv9RuJpHpvMi56MOzQOeLH3Ahwx7_sj7/preview"></iframe>
-				</div>
-				<p class="body">
-					Drawn using <a class="link" target="_blank" href="https://www.gimp.org/">GIMP 2</a><br>
-					Recorded in <a class="link" target="_blank" href="https://obsproject.com/">OBS Studio</a><br>
-					Sped up in Adobe After Effects<br>
-					Music used:<br>
-					"Style Funk" by Kevin MacLeod (<a class="link" target="_blank" href="https://incompetech.com/">incompetech.com</a>)<br>
-					Licensed under Creative Commons: By Attribution 3.0<br>
-					<a class="link" target="_blank" href="https://creativecommons.org/licenses/by/3.0/">https://creativecommons.org/licenses/by/3.0/</a>
-				</p>
-				<p class="body">
-				The original recording of this video was around five hours long. Speeding it up shortened it 
-				to just five minutes, but presented its own problems - zooming in and out is disorienting at this speed. 
-				The proportions also don't look quite right, as the head seems too wide compared to the shoulders and hips. 
-				Were I to do this again, I would pay more attention to both problems - assuming, of course, 
-				I could be pulled away from the convenience of Adobe Illustrator.
-				</p>
-			<p><br></p>
+
+	<body onload="start()">
+		<div id="title" class="template_title">
+			<p>Digital Media<br>Projects</p>
 		</div>
-	</div>
-</body>
+		
+		<div id="main" class="template_main">
+			<p class="bullet"><a class="link" href="index.html">Back to main page</a></p>
+			<div class="template_content">
+				<p class="header">Crossing for Cheese</p>
+					<div class="template_video">
+						<iframe src="https://drive.google.com/file/d/1GVDae-zk-WU-CFp_1Ifw6vB-o_UzOnbu/preview"></iframe>
+					</div>
+					<p class="body">
+						Made for CSE 334 at Stony Brook University<br>
+						Models and animation made in <a class="link" target="_blank" href="https://www.blender.org/">Blender</a><br>
+						Music used: "Ambler" Kevin MacLeod (incompetech.com)<br>
+						Licensed under Creative Commons: By Attribution 3.0 License<br>
+						<a class="link" target="_blank" href="http://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/</a>
+					</p>
+				<p class="header">What IS God's Love We Deliver?</p>
+					<div class="template_video">
+						<iframe src="https://www.youtube.com/embed/dk2ZKtnkTHw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<p class="body">
+						Made for the non-profit <a class="link" target="_blank" href="https://www.glwd.org/">God's Love We Deliver</a><br>
+						Illustrations drawn in GIMP 2 and Adobe Photoshop<br>
+						Narration recorded on iPhone SE<br>
+						Video editing done in Adobe After Effects<br>
+						Music used: "Optimistic and Upbeat" by TopFlow<br>
+						Stock media provided by <a class="link" target="_blank" href="https://www.pond5.com/artist/topflow#1/2064">Pond5</a>
+					</p>
+				<p class="header">"Self-Portrait" Project</p>
+					<div class="template_video">
+						<iframe src="https://drive.google.com/file/d/1kdic8JceYX3vvo8r_oICpZn3LnVyJAvu/preview"></iframe>
+					</div>
+					<p class="body">
+						Made for ARS 324 at Stony Brook University<br>
+						Applications coded in Java, JavaFX using <a class="link" target="_blank" href="https://netbeans.org/">NetBeans IDE</a><br>
+						Drawings done in Microsoft Paint, <a class="link" target="_blank" href="https://www.gimp.org/">GIMP 2</a><br>
+						Live video recorded using iPhone SE<br>
+						Screen recordings done in <a class="link" target="_blank" href="https://obsproject.com/">OBS Studio</a><br>
+						Music used:<br>
+						"Harmony of Heroes - King DedeDnB (Kirby - King Dedede Theme Remix)" by Brutal MMK<br>
+						<a class="link" target="_blank" href="https://www.youtube.com/watch?v=dZ2YztsTGdI">https://www.youtube.com/watch?v=dZ2YztsTGdI</a>
+					</p>
+					<p class="body">
+					This was a fun project to do! At the end of ARS 324 (Graphic Design), we had to make a video
+					that communicated our personalities (a description deliberately left vague). I wanted to convey 
+					my experiences with both programming and making digital media. More importantly, I wanted to show 
+					how I could use both skill sets for the same project.
+					</p>
+					<p class="body">
+					<b>Fun Fact:</b> 
+						The talking sprite featured at the end of the video had two forms - mouth open and mouth closed.
+						These toggled with every keystroke. If I pressed keys an odd number of times, the program would leave 
+						the sprite's mouth hanging open (and his face looking kind of stupid).
+					</p>
+				<p><br></p>
+				<p class="header">Editing a Profile Picture</p>
+					<div class="template_video">
+						<iframe src="https://drive.google.com/file/d/1jv9RuJpHpvMi56MOzQOeLH3Ahwx7_sj7/preview"></iframe>
+					</div>
+					<p class="body">
+						Drawn using <a class="link" target="_blank" href="https://www.gimp.org/">GIMP 2</a><br>
+						Recorded in <a class="link" target="_blank" href="https://obsproject.com/">OBS Studio</a><br>
+						Sped up in Adobe After Effects<br>
+						Music used:<br>
+						"Style Funk" by Kevin MacLeod (<a class="link" target="_blank" href="https://incompetech.com/">incompetech.com</a>)<br>
+						Licensed under Creative Commons: By Attribution 3.0<br>
+						<a class="link" target="_blank" href="https://creativecommons.org/licenses/by/3.0/">https://creativecommons.org/licenses/by/3.0/</a>
+					</p>
+					<p class="body">
+					The original recording of this video was around five hours long. Speeding it up shortened it 
+					to just five minutes, but presented its own problems - zooming in and out is disorienting at this speed. 
+					The proportions also don't look quite right, as the head seems too wide compared to the shoulders and hips. 
+					Were I to do this again, I would pay more attention to both problems - assuming, of course, 
+					I could be pulled away from the convenience of Adobe Illustrator.
+					</p>
+				<p><br></p>
+			</div>
+		</div>
+	</body>
 </html>
