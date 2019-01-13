@@ -12,29 +12,30 @@ count = 0;
 /* When page loads, start by waiting until next hour. */
 /* (i.e. if page loads at 7:53, wait until 8:00 to start looping through BG colors. */
 function start() {
-	var d = new Date(), h = d.getHours(), m = (3600 * 1000) - d.getMilliseconds();
-	document.body.style.backgroundImage = ((h > 3 && h < 21) ? url_day : url_night);
+	var d = new Date(), m = (3600 * 1000) - d.getMilliseconds();
+	count = d.getHours();
+	document.body.style.backgroundImage = ((count > 3 && count < 21) ? url_day : url_night);
 	document.body.style.backgroundPosition = "top";
 	document.body.style.backgroundRepeat = "no-repeat";
 	document.body.style.backgroundSize = "contain";
-	document.body.style.backgroundColor = hourCodes[h];
+	document.body.style.backgroundColor = hourCodes[count];
 	setTimeout(loop, m);
 }
 
 /* Function starts loop, then calls update() at hour-long intervals. */
 function loop() {
-	var h = new Date().getHours();
-	document.body.style.backgroundImage = ((h > 3 && h < 21) ? url_day : url_night);
+	count = new Date().getHours();
+	document.body.style.backgroundImage = ((count > 3 && count < 21) ? url_day : url_night);
 	document.body.style.backgroundPosition = "top";
 	document.body.style.backgroundRepeat = "no-repeat";
 	document.body.style.backgroundSize = "contain";
-	document.body.style.backgroundColor = hourCodes[h];
+	document.body.style.backgroundColor = hourCodes[count];
 	setInterval(update, 1.5 * 1000);
+	count++;
 }
 
 /* Function called repeatedly to transition to next color. */
 function update() {
-	var h = new Date().getHours();
 	document.body.style.backgroundImage = ((count > 3 && count < 21) ? url_day : url_night);
 	document.body.style.backgroundPosition = "top";
 	document.body.style.backgroundRepeat = "no-repeat";
